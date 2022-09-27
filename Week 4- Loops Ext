@@ -1,0 +1,144 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+
+
+
+#TASK1 - Create a countdown
+#The output should be
+#10
+#9
+#8
+#7
+#...
+#0
+#HINT Use the while Loop
+counter=10
+while counter >=0:
+    print(counter)
+    counter -=1
+    
+#TASK2 - Enhance Task1
+#Print Blastoff! instead of the 0    
+    
+counter=10
+while counter >=0:
+    print(counter)
+    counter -=1
+    if counter==0:
+        print("Blastoff!")
+        break
+#OR
+counter=10
+while counter >=1:
+    print(counter)
+    counter -=1
+print("Blastoff!")
+#OR
+counter=10
+while counter >=1:
+    print(counter)
+    counter -=1
+    if counter==0:
+        print("Blastoff!")
+
+
+#TASK3 - Ask the user for an input and print it
+name=input("What is your name? ")
+print(name)
+
+#OR
+name=input("What is your name? ")
+print("Your Name is", name)
+
+#OR
+name=input("What is your name? ")
+print("Your Name is", name.title())
+
+#OR
+print(input("What is your name? "))
+
+#TASK4 - Enhance Task3 - USE Loops
+#1. Ask the same question over and over again until the user types q
+#2. If the user type q - break the loop
+#3. Print the users response
+#HINT: while, if, break, print
+while True:
+    name=input("What is your name? ")
+    if name=="q":
+        break
+print("Your Name is", name.title())
+
+#TASK4 - More input
+#1. Ask the user for the number of hours worked
+#2. Take the users input and multiply it by 10
+#3. Print Based on the number of hours worked, you earned $___.
+#   where the ___ is the amount calculated
+
+hours=input("Enter the total hours worked... ")
+answer=hours*10
+print("Based on the number of hours worked, you earned $", answer)
+#because the hours entered is a String (text) it is going to repeat the string 10 times
+
+#You need to convert the string input to either an int (integer) or float (decimals)
+hours=input("Enter the total hours worked... ")
+answer=int(hours)*10 #converted the string value entered to an integer
+print("Based on the number of hours worked, you earned $", answer)
+
+#OR
+hours=input("Enter the total hours worked... ")
+answer=int(hours)*10 #converted the string value entered to an integer
+print("Based on the number of hours worked, you earned $"+ str(answer))
+
+#OR
+hours=int(input("Enter the total hours worked... ")) #converted the string value entered to an integer
+answer=hours*10 
+print("Based on the number of hours worked, you earned $"+ str(answer))
+
+
+#OR
+hours=float(input("Enter the total hours worked... ")) #converted the string value entered to a float (decimal)
+answer=hours*10 
+print("Based on the number of hours worked, you earned $"+ str(answer))
+
+
+#OR
+hours=float(input("Enter the total hours worked... ")) #converted the string value entered to a float (decimal)
+answer=hours*10 
+print("Based on the number of hours worked, you earned $%f" %(answer))
+
+
+#OR
+hours=int(input("Enter the total hours worked... ")) #converted the string value entered to a float (decimal)
+answer=hours*10 
+print("Based on the number of hours worked, you earned $%d" %(answer))
+
+#OR
+hours=int(input("Enter the total hours worked... ")) #converted the string value entered to a float (decimal)
+answer=hours*10 
+statements="Based on the number of hours worked, you earned $"
+print("%s%d" %(statements, answer))
+#place holder %s for string, %d for number/int, %f for float/decimal
+
+
+#TASK5 - Loops and Lists
+#1. Assign the following colors to a list called items
+#   red, orange, yellow, green
+#2. For the output display 1 red 2 orange 3 yellow 4 green
+#HINT: for loop, print
+
+items=["red", "orange", "yellow", "green"]
+x=1
+for i in items:
+    print(x,i)
+    x+=1    #same as doing x=x+1
+
+
+
+
+
+
+
