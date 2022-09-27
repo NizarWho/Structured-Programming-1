@@ -135,6 +135,9 @@ x=1
 for i in items:
     print(x,i)
     x+=1    #same as doing x=x+1
+    
+    
+   #(incomplete code task-5)
 
 
 
