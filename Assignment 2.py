@@ -57,45 +57,40 @@ print(list1[4], 'is a fun career that revolves around art')
 
 # Ordered Working List
 careers= ['Teacher', 'Dr', 'Engineer']
-print(*careers)
+print(*careers, 'Orignial')
 for i in careers:
-   print(sorted(careers)) 
-   print(careers)
-   print(sorted(careers, reverse=True))
-   print(careers)
+   print(sorted(careers), '-Alphabetical') 
+   print(careers, '-Original')
+   print(sorted(careers, reverse=True), '-Reverse')
+   print(careers, '-Original')
    careers.reverse()
-   print(careers)
+   print(careers, '-Reverse')
    careers.remove('Teacher')
    careers.remove('Engineer')
-   print(careers)
    careers.insert(1, 'Engineer')
-   print(careers)
    careers.insert(2, 'Teacher')
-   print(careers)
+   print(careers, '-Alphabetical')
    careers.remove('Dr')
    careers.remove('Engineer')
    careers.insert(1, 'Engineer')
    careers.insert(2, 'Dr')
-   print(careers)
+   print(careers, '-Reverse')
    break
 
 # Ordered Numbers
 num=[0,1,2,3,4]
-print(num)
+print(num, '-Original')
 for i in num:
-    print(sorted(num)) 
-    print(num)
-    print(sorted(num, reverse=True))
-    print(num)
+    print(sorted(num), '-Increasing') 
+    print(num, '-Orginal')
+    print(sorted(num, reverse=True), '-Decreasing')
+    print(num, '-Original')
     num.reverse()
-    print(num)
+    print(num, '-Reverse')
     num.reverse()
-    print(num)
-    print(careers)
-    print(sorted(num))
-    print(num)
-    print(sorted(num, reverse=True))
-    print(num)
+    print(sorted(num), '-Original')
+    print(num, '-Increasing')
+    print(sorted(num, reverse=True), '-Decreasing')
     break
 
 
