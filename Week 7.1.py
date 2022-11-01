@@ -61,3 +61,45 @@ for timeofday in ['Good Morning', 'Good Afternoon', 'Good Evening']:
     print('How are you feeling?')
     feeling = input()
     print('I am happy to hear that you are feeling', feeling)
+    
+    
+# 11/01/2022- week 8 updates
+# Task 3 - change it to a function
+
+def askfeeling(): # defined the funtioned and name() if need inputs you can ut them in parenthesiss and seperate with comma 
+    print('How are you feeling?')
+    feeling = input()
+    print ('I am happy to hear that you are feeling', feelings)
+    return;
+print('Good Morning')  # we are doing a function call 3 times! 3 diffrent messages we have 
+askfeeling()
+print('Good Morning')
+askfeeling()
+print('Good Morning')
+askfeeling()
+
+# Task 3.1 repeat the same as 3 but, use a loop this time!
+
+def askfeeling(): # defined the funtioned and name() if need inputs you can ut them in parenthesiss and seperate with comma 
+    print('How are you feeling?')
+    feeling = input()
+    print ('I am happy to hear that you are feeling', feelings)
+    return;
+for timeofday in ['Good Morning', 'Good Afternoon', 'Good Evening']:
+    print(timeofday)
+    print('How are you feeling?')
+    feeling = input()
+    print('I am happy to hear that you are feeling', feeling)
+
+# or put the foor loop inside!!
+
+def askfeeling():
+    for timeofday in ['Good Morning', 'Good Afternoon', 'Good Evening']:
+        print(timeofday)
+        print('How are you feeling?')
+        feeling = input()
+        print('I am happy to hear that you are feeling', feeling)
+        # return; do not use return! we do not want to close the function
+askfeeling()
+
+
